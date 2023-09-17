@@ -1,1 +1,1 @@
-mi primer programa: Es un formulario para calcular cuanto dinero debe pagar cada familia, de agua, luz y gas.
+mi primer programa: Es un formulario para calcular cuanto dinero debe pagar cada familia, de agua, luz y gas mensualmente.
