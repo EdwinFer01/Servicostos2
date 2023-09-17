@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario dinamico</title>
+    <link rel="stylesheet" type="text/css" href="style.css" id="color-fondo-claro">
+</head>
+
+<body> 
+        <h1 id="titulo1">ServiCostos con gráficas en Power BI</h1>
+        <button id="btnSwitchTheme" class="text-claro">Oscuro</button>
+
+    <form id="formulario1" action="">
+        <label for="subtotal"> Subtotal $ </label>
+        <input type="number" id="subtotal" name="subtotal" required><br><br>
+
+        <label for="cantidad1"> Consumo Total kWh </label>
+        <input type="number" id="consumoTotal" name="consumoTotal" required><br><br>
+
+        <label for="costo"> Costo por unidad</label>
+        <input type="number" id="costoUnidad" name="costoUnidad" required readonly><br><br>
+        
+        <label for="costosFijos"> Costos fijos </label>
+        <input type="number" id="costosFijos" name="costosFijos" required><br><br>
+        
+        <label for="consumoMesActualContadorParcial"> Consumo mes actual contador parcial </label>
+        <input type="number" id="consumoMesActualContadorParcial" name="consumoMesActualContadorParcial" required><br><br>
+    <!-- 
+        <label for="consumoMesAnteriorGlobal"> Consumo mes anterior contador global </label>
+        <input type="number" id="consumoMesAnteriorGlobal" name="consumoMesAnteriorGlobal" required><br><br>
+    -->
+        <label for="consumoMesAnteriorParcial"> Consumo mes anterior contador parcial </label>
+        <input type="number" id="consumoMesAnteriorParcial" name="consumoMesAnteriorParcial" required><br><br>
+        
+        <label for="consumoDiferenciaMesActualContadorGlobal"> Consumo  diferencial mes actual contador global </label>
+        <input type="number" id="consumoDiferenciaMesActualContadorGlobal" name="consumoDiferenciaMesActualContadorGlobal" required readonly><br><br>
+        
+        <label for="consumoDiferenciaMesActualContadorParcial"> Consumo  diferencial mes actual contador parcial </label>
+        <input type="number" id="consumoDiferenciaMesActualContadorParcial" name="consumoDiferenciaMesActualContadorParcial" required readonly><br><br>
+        
+
+        <label for="valorPagarGlobal"> Valor a pagar para el contador global, mes actual </label>
+        <input type="number" id="valorPagarGlobal" name="valorPagarGlobal" required readonly><br><br>
+        
+        <label for="valorPagarParcial"> Valor a pagar para el contador parcial, mes actual </label>
+        <input type="number" id="valorPagarParcial" name="valorPagarParcial" required readonly><br><br>
+
+        <label for="costoTotal"> Costo total </label>
+        <input type="number" id="costoTotal" name="costoTotal" required readonly><br><br>
+
+
+        <input id="btnSubmit" type="submit" value="Enviar">
+        <input id="btnClean" type="button" value="Limpiar"> 
+        <input id="btnCalculate" type="button" value="Calcular">
+
+    </form>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

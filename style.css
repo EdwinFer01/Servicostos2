@@ -1,0 +1,98 @@
+:root{
+    --color-fondo-claro:   #e6f7ff;
+    --tamaño-texto: 20px;
+    --color-fondo-oscuro: #07648f;
+}
+
+/* Cambia el color del fondo de la página*/
+body{
+    background-color: var(--color-fondo-claro);
+    font-size: var(--color-texto);
+}
+
+/* Alinea el titulo*/
+#titulo1{
+    text-align: center; /* Centra el texto horizontalmente */
+    
+}
+
+#btnSwitchTheme{
+    background-color:var(--color-fondo-oscuro);
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;  
+    margin: 5px; 
+    float: right;
+    margin-top: 0%;
+}
+
+
+/* Estilo para el formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Estilo para las etiquetas */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"] {
+    width: 100%;
+    height: auto;
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 20px;
+    color: darkgray;
+    
+}
+
+/* Estilo para el boton de envío */
+#btnSubmit {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+
+#btnClean {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#btnCalculate{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
