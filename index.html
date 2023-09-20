@@ -16,47 +16,47 @@
         action="https://api.powerbi.com/beta/71b3c6d9-bc93-4143-916d-d870154f1da5/datasets/2013677c-bd83-41cc-a01b-992f73aa9229/rows?experience=power-bi&key=XjSCVhPljd2UBzSDGqrec%2BwMZ6UUb74DkaiW9xWMxbWaSS1j1LUU02Tpode1WUEm0hkUm6zOknBWBI5Hom8CNQ%3D%3D"
         method="post">
         <label for="subtotal"> Subtotal $ </label>
-        <input type="number" id="subtotal" step="0.01" name="subtotal" required><br><br>
+        <input type="number" id="subtotal" step="0.01" name="subtotal" placeholder="Valor en pesos COP $" required><br><br>
 
-        <label for="cantidad1"> Consumo Total kWh </label>
-        <input type="number" id="consumoTotal" step="0.01" name="consumoTotal" required><br><br>
+        <label for="consumoTotal"> Consumo Total </label>
+        <input type="number" id="consumoTotal" step="0.01" name="consumoTotal"  placeholder="Cantidad en kWh o m3"><br><br>
 
         <label for="costo"> Costo por unidad</label>
-        <input type="number" id="costoUnidad" step="0.01" name="costoUnidad" required readonly><br><br>
+        <input type="number" id="costoUnidad" step="0.01" name="costoUnidad" placeholder="No editar" readonly><br><br>
 
         <label for="costosFijos"> Costos fijos </label>
-        <input type="number" id="costosFijos" name="costosFijos" required><br><br>
+        <input type="number" id="costosFijos" name="costosFijos" placeholder="Cantidad en pesos COP $" required><br><br>
 
         <label for="consumoMesActualContadorParcial"> Consumo mes actual contador parcial </label>
         <input type="number" id="consumoMesActualContadorParcial" name="consumoMesActualContadorParcial"
-            required><br><br>
+           placeholder="kWh o m3" required><br><br>
         <!-- 
         <label for="consumoMesAnteriorGlobal"> Consumo mes anterior contador global </label>
         <input type="number" id="consumoMesAnteriorGlobal" name="consumoMesAnteriorGlobal" required><br><br>
     -->
         <label for="consumoMesAnteriorParcial"> Consumo mes anterior contador parcial </label>
-        <input type="number" id="consumoMesAnteriorParcial" name="consumoMesAnteriorParcial" required><br><br>
+        <input type="number" id="consumoMesAnteriorParcial" name="consumoMesAnteriorParcial" placeholder="kWh m3"><br><br>
 
         <label for="consumoDiferenciaMesActualContadorGlobal"> Consumo diferencial mes actual contador global </label>
         <input type="number" id="consumoDiferenciaMesActualContadorGlobal"
-            name="consumoDiferenciaMesActualContadorGlobal" required readonly><br><br>
+            name="consumoDiferenciaMesActualContadorGlobal" placeholder="No editar" required readonly><br><br>
 
         <label for="consumoDiferenciaMesActualContadorParcial"> Consumo diferencial mes actual contador parcial </label>
         <input type="number" id="consumoDiferenciaMesActualContadorParcial"
-            name="consumoDiferenciaMesActualContadorParcial" required readonly><br><br>
+            name="consumoDiferenciaMesActualContadorParcial" placeholder="No editar" required readonly><br><br>
 
 
         <label for="valorPagarGlobal"> Valor a pagar para el contador global, mes actual </label>
-        <input type="number" id="valorPagarGlobal" name="valorPagarGlobal" required readonly><br><br>
+        <input type="number" id="valorPagarGlobal" name="valorPagarGlobal" placeholder="No editar" required readonly><br><br>
 
         <label for="valorPagarParcial"> Valor a pagar para el contador parcial, mes actual </label>
-        <input type="number" id="valorPagarParcial" name="valorPagarParcial" required readonly><br><br>
+        <input type="number" id="valorPagarParcial" name="valorPagarParcial" placeholder="No editar" required readonly><br><br>
 
         <label for="costoTotal"> Costo total </label>
-        <input type="number" id="costoTotal" name="costoTotal" required readonly><br><br>
+        <input type="number" id="costoTotal" name="costoTotal" placeholder="No editar" required readonly><br><br>
 
         <label for="fechaActual"> Fecha </label>
-        <input type="date" id="fechaActual" name="fechaActual" value="<?php echo date('Y-m-d'); ?>"> <br> <br>
+        <input type="date" id="fechaActual" name="fechaActual" value="<?php echo date('Y-m-d'); ?>" required> <br> <br>
 
 
         <input id="btnSubmit" type="submit" value="Enviar">
